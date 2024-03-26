@@ -9,8 +9,8 @@ export default function CartProviders({children}: {children: ReactNode}) {
         cartMode='client-only'
         mode='payment'
         stripe= {process.env.NEXT_PUBLIC_STRIPE_KEY as string}
-        successUrl='http://localhost:3000/stripe/success'
-        cancelUrl='http://localhost:3000/stripe/error'
+        successUrl='https://tcommerce-r2b4sieml-tusharbajaj05s-projects.vercel.app/stripe/success'
+        cancelUrl='https://tcommerce-r2b4sieml-tusharbajaj05s-projects.vercel.app/stripe/error'
         billingAddressCollection= {true}
         shouldPersist= {true}
         currency='CAD'
