@@ -38,7 +38,7 @@ export default function ShoppingCartModal() {
             <div className="flex-1 mt-8 overflow-y-auto">
                 <ul className="my-6 divide-y divide-gray-200">
                     {cartCount === 0 ? (
-                        <h1 className="py-6">You don't have any itmes</h1>
+                        <h1 className="py-6">You do not have any itmes</h1>
                     ) : (
                         <>
                             {Object.values(cartDetails ?? {}).map(entry => (
