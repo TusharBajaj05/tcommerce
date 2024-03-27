@@ -41,13 +41,15 @@ export default async function Newest() {
                     <div key={product._id} className="group relative">
                         <div className="aspect-square w-full overflow-hidden 
                             rounded-md bg-gray-200 hover:opacity-75 lg:h-80">
-                            <Image 
-                                src={product.imageUrl}
-                                alt="Product Image"
-                                className="w-full h-full object-cover object-center"
-                                width={300}
-                                height={300}
-                            />
+                            <Link href={`/product/${product.slug}`}>
+                                <Image 
+                                    src={product.imageUrl}
+                                    alt="Product Image"
+                                    className="w-full h-full object-cover object-center"
+                                    width={300}
+                                    height={300}
+                                />
+                            </Link>
                         </div>
 
                         <div className="mt-4 flex justify-between">

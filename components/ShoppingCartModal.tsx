@@ -50,6 +50,7 @@ export default function ShoppingCartModal() {
                                             alt="Product image"
                                             width={100}
                                             height={100}
+                                            priority
                                         />
                                     </div>
                                     <div className="ml-4 flex flex-1 flex-col">
